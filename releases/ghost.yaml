@@ -5,12 +5,12 @@ metadata:
   name: ghost
   namespace: demo
   annotations:
-    fluxcd.io/automated: "false"
+    fluxcd.io/automated: 'false'
     fluxcd.io/tag.chart-image: glob:3.1.1-debian-9-*
 spec:
   releaseName: ghost
   chart:
-    git: ssh://git@github.com/fluxcd/flux-get-started
+    git: ssh://git@github.com:t-mario-y/flux-get-started.git
     ref: master
     path: charts/ghost
   values:
